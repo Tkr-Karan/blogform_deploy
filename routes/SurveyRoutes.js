@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const SurveyBlock = require("../models/SurveyModel");
+const SurveyBlock = require("../models/surveyModel");
 
 router.post("/survey-blocks", async (req, res) => {
   try {

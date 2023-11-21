@@ -27,11 +27,11 @@ app.use(express.json());
 app.use(bodyParser.json({ limit: "100mb" }));
 app.use(bodyParser.urlencoded({ limit: "100mb", extended: true }));
 
-app.use("https://blocksform.onrender.com//image", ImageRoutes);
-app.use("https://blocksform.onrender.com//video", VideoRoutes);
-app.use("https://blocksform.onrender.com//published", PublishedRoutes);
-app.use("https://blocksform.onrender.com//analytics", AnalyticRoutes);
-app.use("https://blocksform.onrender.com//survey", SurveyRoutes);
+app.use("https://blocksform.onrender.com/image", ImageRoutes);
+app.use("https://blocksform.onrender.com/video", VideoRoutes);
+app.use("https://blocksform.onrender.com/published", PublishedRoutes);
+app.use("https://blocksform.onrender.com/analytics", AnalyticRoutes);
+app.use("https://blocksform.onrender.com/survey", SurveyRoutes);
 
 app.listen(PORT, () => {
   console.log(`Your server is working fine on ${PORT}, keep working`);

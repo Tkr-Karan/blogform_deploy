@@ -22,6 +22,10 @@ const AnalyticRoutes = require("./routes/AnalyticsRoutes");
 const SurveyRoutes = require("./routes/SurveyRoutes");
 
 app.use(express.static("./public"));
+
+app.get('*', function (req, res) {
+  res.sendFile(path.resolve(__dirname, './build/index.html'));
+});
 app.use(cors());
 app.use(express.json());
 app.use(bodyParser.json({ limit: "100mb" }));
